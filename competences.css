@@ -1,0 +1,23 @@
+.2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.2-img {
+  display: flex;
+}
+
+.2 {
+  display: flex;
+}
+
+img {
+  border-radius: 80px;
+  height: auto;
+  max-width: 30%;
+}
+
+.e-1 {
+  display: flex;
+  flex-direction: row;
+}
