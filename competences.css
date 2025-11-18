@@ -1,6 +1,7 @@
 .b {
   display: flex;
   flex-direction: row;
+  gap:10%;
 }
 
 .b-img {
@@ -12,13 +13,35 @@
 }
 
 img {
-  border-radius: 80px;
+  border-radius: 15px;
   height: auto;
-  max-width: 30%;
+  max-width: 100%;
 }
 
 .e-1 {
   display: flex;
   flex-direction: row;
   gap:10px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
