@@ -1,0 +1,45 @@
+div.img{background-color: blue;
+border-radius: 30%;
+}
+article{background-color: rgb(255, 255, 255);}
+
+th {background-color:linear-gradient(blue,rgb(210, 122, 122));
+    text-align: center;
+    border-radius: 20px;}
+
+
+td{background-color:linear-gradient(rgb(255, 0, 0),white);
+    text-align: center;
+    border-radius: 30px;
+    border: 5%;
+}
+img{
+    border-radius: 30%;
+    height: auto ;
+    max-height: 20%;
+}
+.iut{
+    display:flex;
+    flex-direction: row;
+
+}
+
+table{flex-wrap: wrap;
+    background-color: rgb(139, 133, 133);
+border-radius:15px;
+
+}
+th{
+    background-color: antiquewhite;
+}
+td{
+    background-color: beige;
+}
+
+body{
+    background-color: beige;
+}
+.competence1{
+
+    flex-direction: row;
+}
