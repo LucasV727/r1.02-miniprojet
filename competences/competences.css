@@ -1,7 +1,7 @@
 .b {
   display: flex;
   flex-direction: row;
-  gap:10%;
+  gap:5%;
 }
 
 .b-img {
@@ -36,6 +36,9 @@ main {
   main {
     padding: 0 15px;
   }
+  .b {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -44,4 +47,45 @@ main {
     font-size: 16px;
     line-height: 1.5;
   }
+}
+
+.e {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.e-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.e-1 h3 {
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.e-1 h3:first-child {
+  background-color: #f0f0f0;
+}
+
+.e-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.e-2 p {
+  border: 1px solid gray;
+  padding: 8px 12px;
+  margin: 0;
+}
+.e-1-left {
+  max-width: 30%
 }
