@@ -28,6 +28,7 @@ table{flex-wrap: wrap;
     background-color: rgb(139, 133, 133);
 border-radius:15px;
 
+
 }
 th{
     background-color: antiquewhite;
@@ -43,3 +44,60 @@ body{
 
     flex-direction: row;
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.container > div:first-child {
+  flex: 0 0 25%; /* petit bloc texte */
+}
+
+.container > div:last-child {
+  flex: 1; /* le tableau occupe le reste */
+}
+li {
+    flex: 0 0 30%; /* largeur fixe : environ 3 éléments par ligne */
+    border: 1px solid #444;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px; /* largeur totale de la zone ressources */
+    gap: 10px;
+  }
+
+
+@media (max-width: 768px) {
+  
+  .container {
+    flex-direction: column;
+     width: 100%;
+
+  }
+  .table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+  }
+
+  .container > * {
+    width: 100%;
+  }
+}
+
