@@ -21,3 +21,32 @@ hr {
   border-top: 1px solid #ccc;
   margin: 20px 0;
 }
+
+strong {
+  color: #ff3a39;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 15px;
+  }
+  .b {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
