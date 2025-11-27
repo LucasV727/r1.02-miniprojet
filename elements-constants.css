@@ -1,219 +1,89 @@
-.super-encadre {
-  width: 95%; 
-  max-width: 1800px;
-  margin: 30px auto 0 auto;
-  border: 4px solid #222;
-  background: #fff;
-  box-sizing: border-box;
-  padding: 20px 0 12px 0;
+body{margin:0;font-family:serif;background:#fff}
+
+/* cadre général header */
+.super-encadre,.footer{
+  width:90%;max-width:1800px;margin:30px auto 0;
+  border:4px solid #222;background:#fff;box-sizing:border-box
+}
+.super-encadre{padding:20px 0 12px}
+
+/* logos */
+.header-logos{
+  display:flex;align-items:center;gap:10px;
+  width:90%;margin:0 auto 50px
+}
+.header-logo{
+  border:3px solid #222;width:180px;height:80px;
+  display:flex;justify-content:center;align-items:center;background:#fff
+}
+.header-logo img{max-width:90%;max-height:70px;object-fit:contain}
+.header-logo:nth-child(3){margin-left:auto}
+
+/* menu principal */
+.header-menu{
+  width:90%;margin:0 auto;border:3px solid #222;background:#fff
+}
+.header-menu>ul{
+  display:flex;list-style:none;margin:0;padding:0
+}
+.header-menu>ul>li{
+  flex:1;border:3px solid #222;margin:12px;
+  background:#bcbcbc;position:relative
+}
+.header-menu a{
+  display:flex;justify-content:center;align-items:center;
+  height:64px;font-size:1.7em;font-weight:bold;
+  text-decoration:underline;color:#222;background:#bcbcbc
+}
+.header-menu a:hover,.sous a:hover{background:#e1e1e1}
+
+/* flèche et sous‑menu */
+.deroulant>a::after{content:" ▼";font-size:.8em;margin-left:8px}
+.sous{
+  display:none;position:absolute;left:-3px;top:100%;
+  width:calc(100% + 6px);background:#bcbcbc;
+  border:3px solid #222;box-sizing:border-box;padding:8px 6px;z-index:10
+}
+.deroulant:hover .sous{display:block}
+.sous li{
+  list-style:none;border:3px solid #222;
+  margin:6px 0;background:#bcbcbc
+}
+.sous a{
+  display:block;padding:10px 5px;
+  text-align:center;font-style:italic;font-size:1.1em;
+  text-decoration:underline;color:#222
 }
 
-/* Barre des logos */
-.header-logos {
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  width: 95%; 
-  margin: 0 auto 50px auto; 
-  gap: 10px; 
+/* FOOTER */
+.footer{
+  margin:40px auto;padding:18px;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  position:relative;border-color:#000
 }
-/* Chaque logo */
-.header-logo {
-  border: 3px solid #222;
-  background: #fff;
-  width: 150px; 
-  height: 70px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer-plan,.footer-entreprise{
+  border:2px solid #000;padding:10px;width:30%;
+  min-width:220px;background:#fff;box-sizing:border-box
 }
-/* Image dans le logo */
-.header-logo img {
-  max-width: 90%;
-  max-height: 60px; 
-  object-fit: contain;
+.footer-plan h3,.footer-entreprise h3,.footer-centre h3{
+  margin:0 0 10px;font-size:1.1em
+}
+.footer-entreprise h4{margin:8px 0 5px;font-size:1em}
+.footer-plan ul,.footer-entreprise ul{margin:0;padding-left:20px}
+.footer-plan ul ul{padding-left:16px}
+
+/* bloc RGPD centré en bas */
+.footer-centre{
+  position:absolute;left:50%;bottom:10px;
+  transform:translateX(-50%);text-align:center
+}
+.footer-centre a{
+  text-decoration:none;font-weight:bold;color:#00e
 }
 
-/* Troisième logo tout à droite */
-.header-logo:nth-child(3) {
-  margin-left: auto; 
-}
-
-/* Barre de menu encadrée */
-.header-menu {
-  width: 95%; 
-  margin: 0 auto;
-  border: 3px solid #222;
-  background: #fff;
-  padding: 0;
-}
-/* Liste horizontale du menu */
-.header-menu > ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-/* Chaque élément du menu */
-.header-menu > ul > li {
-  flex: 1 1 0;
-  border: 3px solid #222;
-  margin: 12px;
-  background: #bbb;
-  position: relative;
-}
-/* Liens du menu */
-.header-menu a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 64px;
-  font-size: 1.6em;
-  font-weight: bold;
-  color: #222;
-  text-decoration: underline;
-  background: #bbb;
-  border: none;
-}
-
-.header-menu a:hover {
-  background: #e1e1e1;
-  color: #000;
-}
-
-/* Flèche sur Compétences */
-.deroulant > a::after {
-  content: " ▼";
-  font-size: 0.8em;
-  margin-left: 8px;
-}
-
-/* Sous-menu de Competences */
-.sous {
-  display: none;
-  position: absolute;
-  left: -3px;
-  top: 100%;
-  width: calc(100% + 6px);
-  background: #bbb;
-  border: 3px solid #222;
-  z-index: 10;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* Affiche le sous-menu en vertical */
-.deroulant:hover .sous {
-  display: block;
-}
-/* Chaque élément du sous-menu */
-.sous li {
-  border: 3px solid #222;
-  margin: 10px 0;
-  background: #bbb;
-  list-style: none;
-}
-/* Lien dans le sous-menu */
-.sous a {
-  display: block;
-  text-align: center;
-  padding: 15px 10px;
-  height: auto;
-  font-size: 1.2em;
-  font-style: italic;
-  color: #222;
-  text-decoration: underline;
-  background: #bbb;
-}
-/* Effet hover sur le sous-menu */
-.sous a:hover {
-  background: #e1e1e1;
-}
-
-/*adaption aux écrans ≤ 1100px */
-@media (max-width: 1100px) {
-  .header-logo {
-    width: 100px;
-    height: 50px;
-  }
-  .header-logos {
-    width: 99%;
-  }
-  .header-menu {
-    width: 99%;
-  }
-  .header-menu a {
-    font-size: 1em;
-    height: 40px;
-  }
-  .sous a {
-    font-size: 0.9em;
-  }
-}
-
-nav a, .sous a {
-  box-shadow: 0 1px 2px #88888833;
-}
-
-/* Footer */
-footer.footer {
-  border: 4px solid #000;
-  padding: 18px;
-  margin: 30px auto;
-  width: 95%; 
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-  box-sizing: border-box;
-}
-/* Bloc plan du site et équipe */
-.footer-plan, .footer-entreprise {
-  border: 2px solid #000;
-  padding: 10px;
-  width: 30%;
-  background: #fff;
-  box-sizing: border-box;
-  min-width: 220px;
-}
-/* Titres du footer */
-.footer-plan h3,
-.footer-entreprise h3,
-.footer-centre h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-/* Sous-titres du footer */
-.footer-entreprise h4 {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-/* Listes du footer */
-.footer-plan ul, .footer-entreprise ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.footer-plan ul ul {
-  padding-left: 16px;
-  margin: 0;
-}
-/* RGPD centré en bas */
-.footer-centre {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-  text-align: center;
-}
-
-.footer-centre a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #0000ee;
+/* petite adaptation largeur */
+@media(max-width:1100px){
+  .header-logos,.header-menu{width:99%}
+  .header-logo{width:130px;height:60px}
+  .header-menu a{font-size:1.1em;height:44px}
 }
