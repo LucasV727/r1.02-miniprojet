@@ -1,56 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <!-- optional  -->
-    <meta http-equiv="refresh" content="10">
-
-    <meta charset="utf-8" />
-    <title>a</title>    
-    <link rel="stylesheet" href="./styles.css" />
-<link rel="stylesheet" href="elements-constants.css" />
-    <link rel="stylesheet" href="./CSSPrésentationBUT.css" />
+    <meta charset="utf-8">
+    <title>BUT Informatique - Présentation</title>    
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./CSSPrésentationBUT.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
   </head>
-  
-
 
 <body>
 <!-- HEADER PRINCIPAL qui ontient les logos et le menu -->
-<header class="super-encadre">
-  <!-- Les logos -->
-  <div class="header-logos">
-  <div class="header-logo"><img src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Auch/Castres"></div>
-  <div class="header-logo"><img src="https://upload.wikimedia.org/wikipedia/fr/a/a4/Logo_UT3.jpg" alt="Logo UT3 Paul Sabatier"></div>
-  <div class="header-logo"><img src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Toulouse"></div>
-  </div>
-   <!-- Le menu -->
-  <nav class="header-menu">
-  <ul>
-   <li><a href="#"><span>Accueil</span></a></li>
-   <li><a href="#"><span>Présentation du BUT</span></a></li>
-   <li class="deroulant">
-    <a href="#"><span>Compétences </span></a>
-     <!-- Les sous partie de Compétences -->
-    <ul class="sous">
-      <li><a href="#">Compétence 1</a></li>
-      <li><a href="#">Compétence 2</a></li>
-      <li><a href="#">Compétence 3</a></li>
-      <li><a href="#">Compétence 3</a></li>
-      <li><a href="#">Compétence 4</a></li>
-      <li><a href="#">Compétence 5</a></li>
-      <li><a href="#">Compétence 6</a></li>
+<header class="header">
+    <div class="header-top">
+        <img class="logo" src="./img/favicone.jpg" alt="Logo IUT Auch/Castres">
+        <img class="logo" src="./img/logo2.jpg" alt="Logo UT3 Paul Sabatier">
+        <img class="logo" src="./img/logo1.jpg" alt="Logo IUT Toulouse">
+    </div>
+
+    <nav class="site-nav" aria-label="Navigation principale">
+  <ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="./Untitled-1.html">Accueil</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Présentation du BUT</a></li>
+
+    <li class="nav-item nav-has-submenu" aria-haspopup="true">
+      <a class="nav-link" href="#" aria-expanded="false">Compétences ▾</a>
+      <ul class="nav-submenu">
+        <li><a class="submenu-link" href="./competences/1.html">Compétence 1</a></li>
+        <li><a class="submenu-link" href="./competences/2.html">Compétence 2</a></li>
+        <li><a class="submenu-link" href="./competences/3.html">Compétence 3</a></li>
+        <li><a class="submenu-link" href="./competences/4.html">Compétence 4</a></li>
+        <li><a class="submenu-link" href="./competences/5.html">Compétence 5</a></li>
+        <li><a class="submenu-link" href="./competences/6.html">Compétence 6</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
   </ul>
-  </li>
-   <li><a href="#"><span>Contact</span></a></li>
-    </ul>
-  </nav>
+</nav>
 </header>
 
-  <main>
-    <!-- Contenu de la page -->
-  </main>
+  
 
   
     <main>
@@ -60,8 +49,8 @@
         <div>
           <h2>Règles de validation</h2>
           <p>
-            Pour passer à l'année supérieure, il faut obtenir une moyenne de semestre ≥ 8/20.
-            Voici le tableau des coefficients des ressources du semestre 1. pour chaque competence on rajoute 30% des SAE 
+            Pour passer à l'année supérieure, il faut obtenir une moyenne >= 10 dans au moins quatre compétences et ne jamais descendre en dessous des 8/20 . En troisième année, il faut pour avoir le diplôme du BUT avoir une note supérieure à 10/20. 
+            Voici le tableau des coefficients des ressources du semestre 1. pour chaque competence on rajoute 40% des SAE 
           </p>
         </div>
 
@@ -79,9 +68,9 @@
 
   <tr><td>R1.01 Initiation au développement</td><td>42%</td><td>24%</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>R1.02 Développement d'interfaces web</td><td>12%</td><td>-</td><td>-</td><td>-</td><td>18%</td><td>5%</td></tr>
-  <tr><td>R1.03 Introduction à l’architecture des ordinateurs</td><td>-</td><td>3%</td><td>21%</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>R1.04 Introduction aux systèmes d’exploitation</td><td>-</td><td>3%</td><td>21%</td><td>-</td><td>-</td><td>-</td></tr>
-  <tr><td>R1.05 Introduction aux bases de données et SQL</td><td>-</td><td>-</td><td>-</td><td>36%</td><td></td><td>-</td></tr>
+  <tr><td>R1.03 Introduction à l'architecture des ordinateurs</td><td>-</td><td>3%</td><td>21%</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>R1.04 Introduction aux systèmes d'exploitation</td><td>-</td><td>3%</td><td>21%</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td>R1.05 Introduction aux bases de données et SQL</td><td>-</td><td>-</td><td>-</td><td>36%</td><td>-</td><td>-</td></tr>
   <tr><td>R1.06 Mathématiques discrètes</td><td>-</td><td>15%</td><td>-</td><td>18%</td><td>-</td><td>-</td></tr>
   <tr><td>R1.07 Outils mathématiques fondamentaux</td><td>-</td><td>15%</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
   <tr><td>R1.08 Gestion de projet & des organisations</td><td>-</td><td>-</td><td>-</td><td>-</td><td>27%</td><td>11%</td></tr>
@@ -113,21 +102,21 @@
       <table>
         <tr>
           <!-- Image à gauche -->
-          <td width="30%">
+          <td>
             <a href="./competences/1.html">
-              <img src="./img/c1.jpg" width="100%" alt="Compétence 1">
+              <img src="./img/c1.jpg" alt="Icône de la compétence 1 : Réaliser un développement d'application">
+
             </a>
           </td>
 
           <!-- Contenu -->
-          <td width="70%">
-            <h3>Compétence 1 : Réaliser un développement d’application</h3>
+          <td>
+            <h3>Compétence 1 : Réaliser un développement d'application</h3>
             <p>Ressources impliquées :</p>
-            <ul>
+            <ul class="ressources">
               <li>R1.01 - Initiation au développement</li>
               <li>R1.02 - Développement interfaces web</li>
-              <li>R1.03 - Introduction architecture</li>
-              <li>R1.04 - Introduction systèmes</li>
+              <li>R1.10 - Anglais technique</li>
             </ul>
           </td>
         </tr>
@@ -139,20 +128,22 @@
       <table>
         <tr>
           <!-- Contenu à gauche -->
-          <td width="70%">
+          <td>
             <h3>Compétence 2 : Optimiser des applications</h3>
             <p>Ressources impliquées :</p>
-            <ul>
+            <ul class="ressources"> 
+              <li>R1.01 - Initiation au développement</li>
               <li>R1.03 - Intro architecture</li>
               <li>R1.04 - Intro systèmes</li>
-              <li>R1.11 - Bases communication</li>
+              <li>R1.06 - Mathématiques discrètes</li>
+              <li>R1.07 - Outils mathématiques fondamentaux</li>
             </ul>
           </td>
 
           <!-- Image à droite -->
-          <td width="30%">
+          <td>
             <a href="./competences/2.html">
-              <img src="./img/c2.jpg" width="100%" alt="Compétence 2">
+              <img src="./img/c2.jpg" alt="Icône de la compétence 2 : Optimiser des applications">
             </a>
           </td>
         </tr>
@@ -164,19 +155,20 @@
       <table>
         <tr>
           <!-- Image -->
-          <td width="30%">
+          <td>
             <a href="./competences/3.html">
-              <img src="./img/c3.jpg" width="100%" alt="Compétence 3">
+              <img src="./img/c3.jpg" alt="Compétence 3">
             </a>
           </td>
 
-          <td width="70%">
+          <td>
             <h3>Compétence 3 : Administrer des systèmes informatiques</h3>
             <p>Ressources impliquées :</p>
-            <ul>
+            <ul class="ressources"> 
               <li>R1.03 - Intro architecture</li>
               <li>R1.04 - Intro systèmes</li>
-              <li>R1.06 - Maths discrètes</li>
+              <li>R1.10 - Anglais technique</li>
+              <li>R1.11 - Bases communication</li>
             </ul>
           </td>
         </tr>
@@ -187,18 +179,19 @@
       <!-- COMPETENCE 4 -->
       <table >
         <tr>
-          <td width="70%">
+          <td>
             <h3>Compétence 4 : Gérer des données de l'information</h3>
             <p>Ressources impliquées :</p>
-            <ul>
+            <ul class="ressources"> 
               <li>R1.05 - Introduction Base de données</li>
-              <li>R1.08 - Gestion projet / organisation</li>
+              <li>R1.06 - Mathématiques discrètes</li>
+              <li>R1.09 - Économie durable et numérique</li>
             </ul>
           </td>
 
-          <td width="30%">
+          <td>
             <a href="./competences/4.html">
-              <img src="./img/c4.jpg" width="100%" alt="Compétence 4">
+              <img src="./img/c4.jpg" alt="Compétence 4">
             </a>
           </td>
         </tr>
@@ -207,19 +200,20 @@
       <br>
 
       <!-- COMPETENCE 5 -->
-      <table >
+      <table>
         <tr>
-          <td width="30%">
+          <td>
             <a href="./competences/5.html">
-              <img src="./img/c5.jpg" width="100%" alt="Compétence 5">
+              <img src="./img/c5.jpg" alt="Compétence 5">
             </a>
           </td>
 
-          <td width="70%">
+          <td>
             <h3>Compétence 5 : Conduire un projet</h3>
             <p>Ressources impliquées :</p>
-            <ul>
-              <li>R1.09 - Economie</li>
+            <ul class="ressources"> 
+              <li>R1.02 - Développement interfaces web</li>
+              <li>R1.08 - Gestion projet / organisation</li>
               <li>R1.11 - Communication</li>
             </ul>
           </td>
@@ -229,21 +223,24 @@
       <br>
 
       <!-- COMPETENCE 6 -->
-      <table >
+      <table>
         <tr>
-          <td width="70%">
-            <h3>Compétence 6 : Collaborer au sein d’une équipe informatique</h3>
+          <td>
+            <h3>Compétence 6 : Collaborer au sein d'une équipe informatique</h3>
             <p>Ressources impliquées :</p>
-            <ul>
+            <ul class="ressources"> 
+              <li>R1.02 - Développement interfaces web</li>
+              <li>R1.08 - Gestion projet / organisation</li>
+              <li>R1.09 - Économie durable et numérique</li>
               <li>R1.10 - Anglais</li>
               <li>R1.11 - Communication</li>
               <li>R1.12 - PPP</li>
             </ul>
           </td>
 
-          <td width="30%">
+          <td>
             <a href="./competences/6.html">
-              <img src="./img/c6.jpg" width="100%" alt="Compétence 6">
+              <img src="./img/c6.jpg" alt="Compétence 6">
             </a>
           </td>
         </tr>
@@ -251,47 +248,43 @@
     </main>
 
 
-    <!-- FOOTER qui contient plan du site RGPD et le nom de l'équipe -->
-  <footer class="footer">
-    <!-- Plan du site -->
-    <div class="footer-plan">
-      <h3>Plan du site</h3>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation du BUT</a></li>
-        <li>
-          <a href="competences.html">Compétences</a>
-          <ul>
-            <li><a href="#">Compétence 1</a></li>
-            <li><a href="#">Compétence 2</a></li>
-            <li><a href="#">Compétence 3</a></li>
-            <li><a href="#">Compétence 4</a></li>
-            <li><a href="#">Compétence 5</a></li>
-            <li><a href="#">Compétence 6</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+   <footer class="footer">
+    <div class="footer-col">
+        <h3>Plan du site</h3>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation du BUT</a></li>
+            <li>
+                <a href="#">Compétences</a>
+                <ul>
+                    <li><a href="./competences/1.html">Compétence 1</a></li>
+                    <li><a href="./competences/2.html">Compétence 2</a></li>
+                    <li><a href="./competences/3.html">Compétence 3</a></li>
+                    <li><a href="./competences/4.html">Compétence 4</a></li>
+                    <li><a href="./competences/5.html">Compétence 5</a></li>
+                    <li><a href="./competences/6.html">Compétence 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-    <div class="footer-centre">
-      <!-- Liens RGPD -->
-      <h3>RGPD</h3>
-      <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">
-        CNIL – RGPD
-      </a>
+
+    <div class="footer-col centre">
+        <h3>RGPD</h3>
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL – RGPD</a>
     </div>
-    <div class="footer-entreprise">
-      <!-- le nom de l'équipe -->
-      <h3>Équipe 2</h3>
-      <h4>Liste des élèves :</h4>
-      <ul>
-        <li>Lassouli Adam</li>
-        <li>Desbois Paul</li>
-        <li>Valenduc Lucas</li>
-        <li>Schaevers Yanis</li>
-      </ul>
+
+    <div class="footer-col">
+        <h3>Équipe 2</h3>
+        <h4>Liste des élèves :</h4>
+        <ul>
+            <li>Lassouli Adam</li>
+            <li>Desbois Paul</li>
+            <li>Valenduc Lucas</li>
+            <li>Schaevers Yanis</li>
+        </ul>
     </div>
-  </footer>
+</footer>
 
 
   </body>
