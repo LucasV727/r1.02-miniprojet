@@ -35,6 +35,16 @@ strong {
   color: #ff3a39;
 }
 
+h1 {
+  text-decoration: underline;
+  text-decoration-color: #ff3a39;
+}
+
+h2, h3 {
+  text-decoration: underline;
+  text-decoration-color: #ffeae9;
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
