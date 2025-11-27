@@ -7,6 +7,35 @@
   <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
+<header class="header">
+    <div class="header-top">
+        <img class="logo" src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Auch/Castres">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/fr/a/a4/Logo_UT3.jpg" alt="Logo UT3 Paul Sabatier">
+        <img class="logo" src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Toulouse">
+    </div>
+
+    <nav class="site-nav" aria-label="Navigation principale">
+  <ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Présentation du BUT</a></li>
+
+    <li class="nav-item nav-has-submenu" aria-haspopup="true">
+      <a class="nav-link" href="#" aria-expanded="false">Compétences ▾</a>
+      <ul class="nav-submenu">
+        <li><a class="submenu-link" href="#">Compétence 1</a></li>
+        <li><a class="submenu-link" href="#">Compétence 2</a></li>
+        <li><a class="submenu-link" href="#">Compétence 3</a></li>
+        <li><a class="submenu-link" href="#">Compétence 4</a></li>
+        <li><a class="submenu-link" href="#">Compétence 5</a></li>
+        <li><a class="submenu-link" href="#">Compétence 6</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</header>
 
   <main class="home-container">
 
@@ -130,7 +159,43 @@
 
 
   </main>
+<footer class="footer">
+    <div class="footer-col">
+        <h3>Plan du site</h3>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation du BUT</a></li>
+            <li>
+                <a href="#">Compétences</a>
+                <ul>
+                    <li><a href="#">Compétence 1</a></li>
+                    <li><a href="#">Compétence 2</a></li>
+                    <li><a href="#">Compétence 3</a></li>
+                    <li><a href="#">Compétence 4</a></li>
+                    <li><a href="#">Compétence 5</a></li>
+                    <li><a href="#">Compétence 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
+    <div class="footer-col centre">
+        <h3>RGPD</h3>
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL – RGPD</a>
+    </div>
+
+    <div class="footer-col">
+        <h3>Équipe 2</h3>
+        <h4>Liste des élèves :</h4>
+        <ul>
+            <li>Lassouli Adam</li>
+            <li>Desbois Paul</li>
+            <li>Valenduc Lucas</li>
+            <li>Schaevers Yanis</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
 
