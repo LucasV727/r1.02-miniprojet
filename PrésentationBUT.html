@@ -7,14 +7,52 @@
     <meta charset="utf-8" />
     <title>a</title>    
     <link rel="stylesheet" href="./styles.css" />
-
+<link rel="stylesheet" href="elements-constants.css" />
     <link rel="stylesheet" href="./CSSPrésentationBUT.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
   </head>
   
-  <body>
+
+
+<body>
+<!-- HEADER PRINCIPAL qui ontient les logos et le menu -->
+<header class="super-encadre">
+  <!-- Les logos -->
+  <div class="header-logos">
+  <div class="header-logo"><img src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Auch/Castres"></div>
+  <div class="header-logo"><img src="https://upload.wikimedia.org/wikipedia/fr/a/a4/Logo_UT3.jpg" alt="Logo UT3 Paul Sabatier"></div>
+  <div class="header-logo"><img src="https://iut-informatique.univ-tlse3.fr/medias/photo/logo-iut-toulouse-informatique-couleurs_1712315267032-jpg" alt="Logo IUT Toulouse"></div>
+  </div>
+   <!-- Le menu -->
+  <nav class="header-menu">
+  <ul>
+   <li><a href="#"><span>Accueil</span></a></li>
+   <li><a href="#"><span>Présentation du BUT</span></a></li>
+   <li class="deroulant">
+    <a href="#"><span>Compétences </span></a>
+     <!-- Les sous partie de Compétences -->
+    <ul class="sous">
+      <li><a href="#">Compétence 1</a></li>
+      <li><a href="#">Compétence 2</a></li>
+      <li><a href="#">Compétence 3</a></li>
+      <li><a href="#">Compétence 3</a></li>
+      <li><a href="#">Compétence 4</a></li>
+      <li><a href="#">Compétence 5</a></li>
+      <li><a href="#">Compétence 6</a></li>
+  </ul>
+  </li>
+   <li><a href="#"><span>Contact</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <!-- Contenu de la page -->
+  </main>
+
+  
     <main>
       <h1>Problématique</h1>
       <!-- Partie 1 : texte + tableau côte à côte -->
@@ -28,7 +66,7 @@
         </div>
 
         <div>
-         <table border="1" width="100%">
+         <table>
   <tr>
     <th>Ressource</th>
     <th>UE1.1</th>
@@ -72,7 +110,7 @@
     
 
       <!-- COMPETENCE 1 -->
-      <table border="1" width="100%">
+      <table>
         <tr>
           <!-- Image à gauche -->
           <td width="30%">
@@ -98,7 +136,7 @@
       <br>
 
       <!-- COMPETENCE 2 -->
-      <table border="1" width="100%">
+      <table>
         <tr>
           <!-- Contenu à gauche -->
           <td width="70%">
@@ -123,7 +161,7 @@
       <br>
 
       <!-- COMPETENCE 3 -->
-      <table border="1" width="100%">
+      <table>
         <tr>
           <!-- Image -->
           <td width="30%">
@@ -147,7 +185,7 @@
       <br>
 
       <!-- COMPETENCE 4 -->
-      <table border="1" width="100%">
+      <table >
         <tr>
           <td width="70%">
             <h3>Compétence 4 : Gérer des données de l'information</h3>
@@ -169,7 +207,7 @@
       <br>
 
       <!-- COMPETENCE 5 -->
-      <table border="1" width="100%">
+      <table >
         <tr>
           <td width="30%">
             <a href="./competences/5.html">
@@ -191,7 +229,7 @@
       <br>
 
       <!-- COMPETENCE 6 -->
-      <table border="1" width="100%">
+      <table >
         <tr>
           <td width="70%">
             <h3>Compétence 6 : Collaborer au sein d’une équipe informatique</h3>
@@ -211,5 +249,50 @@
         </tr>
       </table>
     </main>
+
+
+    <!-- FOOTER qui contient plan du site RGPD et le nom de l'équipe -->
+  <footer class="footer">
+    <!-- Plan du site -->
+    <div class="footer-plan">
+      <h3>Plan du site</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation du BUT</a></li>
+        <li>
+          <a href="competences.html">Compétences</a>
+          <ul>
+            <li><a href="#">Compétence 1</a></li>
+            <li><a href="#">Compétence 2</a></li>
+            <li><a href="#">Compétence 3</a></li>
+            <li><a href="#">Compétence 4</a></li>
+            <li><a href="#">Compétence 5</a></li>
+            <li><a href="#">Compétence 6</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-centre">
+      <!-- Liens RGPD -->
+      <h3>RGPD</h3>
+      <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">
+        CNIL – RGPD
+      </a>
+    </div>
+    <div class="footer-entreprise">
+      <!-- le nom de l'équipe -->
+      <h3>Équipe 2</h3>
+      <h4>Liste des élèves :</h4>
+      <ul>
+        <li>Lassouli Adam</li>
+        <li>Desbois Paul</li>
+        <li>Valenduc Lucas</li>
+        <li>Schaevers Yanis</li>
+      </ul>
+    </div>
+  </footer>
+
+
   </body>
 </html>
