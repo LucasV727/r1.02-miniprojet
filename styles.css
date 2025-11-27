@@ -69,3 +69,15 @@ main {
     line-height: 1.5;
   }
 }
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3333;
+}
