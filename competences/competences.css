@@ -89,3 +89,19 @@ main {
 .e-1-left {
   max-width: 30%
 }
+
+.f {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.f-bouton {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 99999px; /* to make it round everywhere*/
+  background-color: #ff3a39;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #222;
+}
