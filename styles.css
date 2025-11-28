@@ -27,8 +27,16 @@ th {
 
 hr {
   border: none;
-  border-top: 1px solid #ccc;
-  margin: 20px 0;
+  height: 2px;
+  margin: 20px auto;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    #ffeae9 15%,
+    #ff3a39 50%,
+    #ffeae9 85%,
+    transparent 100%
+  );
 }
 
 strong {
