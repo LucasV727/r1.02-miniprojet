@@ -1,0 +1,169 @@
+/*  GLOBAL */
+
+body {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.box {
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 35px;
+    background: #f85a5a;
+}
+
+/*  FORMULAIRE  */
+
+.form-container {
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #ffe6e6; 
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+}
+
+.contact-form input:focus,
+/* je trouvais ça classe en bidouillant avec ce qu'on peut faire dans le css donc je l'ai rajouter */
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f88d8d;
+    box-shadow: 0 0 5px #f88d8d;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 130px;
+}
+
+.send-btn {
+    background: #f88d8d;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send-btn:hover {
+    background: #e66f6f;
+}
+
+/*  SECTION RENSEIGNEMENT */
+
+.info-wrapper {
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    background-color: #ffe6e6;
+}
+
+/* Photo */
+.photo {
+    width: 440px;
+    border: 2px solid #000;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+/* Adresse + Carte */
+.info-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-text,
+.map {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+}
+
+.map {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+/* RESPONSIVE  */
+
+@media (max-width: 900px) {
+    .info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo,
+    .info-right {
+        width: 100%;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 95%;
+    }
+
+    .box,
+    .form-container {
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+
+    .send-btn {
+        font-size: 16px;
+    }
+
+    .photo {
+        height: 220px;
+    }
+}
