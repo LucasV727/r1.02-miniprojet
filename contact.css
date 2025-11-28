@@ -1,0 +1,152 @@
+.a {
+  text-align: center;
+  margin: 40px 0 30px;
+}
+
+.a h1 {
+  margin-bottom: 10px;
+}
+
+.a p {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.b {
+  background-color: #ffeae9;
+  border: 3px solid #222;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.b-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.b-colonnes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.b-colonne {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.b-ligne {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.b-ligne label {
+  font-weight: 700;
+  color: #222;
+}
+
+.b-ligne input,
+.b-ligne textarea {
+  padding: 12px 14px;
+  border: 2px solid #ff3a39;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.b-ligne input:focus,
+.b-ligne textarea:focus {
+  outline: none;
+  border-color: #222;
+}
+
+.b-ligne textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+.b-bouton {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.c {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.c-img {
+  flex: 1 1 280px;
+  max-width: 360px;
+  display: flex;
+}
+
+.c-texte {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.c-img img {
+  border-radius: 18px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.c-texte h2 {
+  margin: 0;
+}
+
+.c-texte address {
+  font-style: normal;
+  background-color: #fefefe;
+  border-radius: 12px;
+  border: 2px solid #ff3a39;
+  padding: 18px;
+  line-height: 1.6;
+}
+
+.c-carte {
+  border: 3px solid #222;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.c-carte img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .c {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .b {
+    padding: 20px 16px;
+  }
+
+  .b-ligne input,
+  .b-ligne textarea {
+    font-size: 0.95rem;
+  }
+
+  .b-bouton {
+    width: 100%;
+    text-align: center;
+  }
+}
