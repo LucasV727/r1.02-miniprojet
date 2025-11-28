@@ -7,8 +7,36 @@
     <link rel="icon" type="image/png" href="../img/favicone.jpg" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./competences.css" />
+    <link rel="stylesheet" href="../header-footer.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header-top">
+          <img class="logo" src="../img/logo1.jpg" alt="Logo IUT Auch/Castres">
+          <img class="logo" src="../img/logo2.jpg" alt="Logo UT3 Paul Sabatier">
+          <img class="logo" src="../img/logo3.png" alt="Logo république françise">
+      </div>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../PrésentationBUT.html">Présentation du BUT</a></li>
+
+            <li class="nav-item nav-has-submenu" aria-haspopup="true">
+              <a class="nav-link" href="#" aria-expanded="false">Compétences ▾</a>
+              <ul class="nav-submenu">
+                <li><a class="submenu-link" href="../competences/1.html">Compétence 1</a></li>
+                <li><a class="submenu-link" href="../competences/2.html">Compétence 2</a></li>
+                <li><a class="submenu-link" href="../competences/3.html">Compétence 3</a></li>
+                <li><a class="submenu-link" href="../competences/4.html">Compétence 4</a></li>
+                <li><a class="submenu-link" href="../competences/5.html">Compétence 5</a></li>
+                <li><a class="submenu-link" href="../competences/6.html">Compétence 6</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <div class="a">
         <h1>Compétence 3 : Administrer des systèmes</h1>
@@ -118,5 +146,42 @@
         </div>
       </div>
     </main>
+      <footer class="footer">
+          <div class="footer-col">
+              <h3>Plan du site</h3>
+              <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Présentation du BUT</a></li>
+                  <li>
+                      <a href="#">Compétences</a>
+                      <ul>
+                          <li><a href="#">Compétence 1</a></li>
+                          <li><a href="#">Compétence 2</a></li>
+                          <li><a href="#">Compétence 3</a></li>
+                          <li><a href="#">Compétence 4</a></li>
+                          <li><a href="#">Compétence 5</a></li>
+                          <li><a href="#">Compétence 6</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col centre">
+              <h3>RGPD</h3>
+              <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL – RGPD</a>
+          </div>
+
+          <div class="footer-col">
+              <h3>Équipe 2</h3>
+              <h4>Liste des élèves :</h4>
+              <ul>
+                  <li>Lassouli Adam</li>
+                  <li>Desbois Paul</li>
+                  <li>Valenduc Lucas</li>
+                  <li>Schaevers Yanis</li>
+              </ul>
+          </div>
+      </footer>
   </body>
 </html>
