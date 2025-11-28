@@ -103,14 +103,14 @@ img {
 
 
 }
-/* -------- GENERAL -------- */
+/* header footer  */
 body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
     background: #f8f8f8;
 }
 
-/* -------- HEADER -------- */
+/* HEADER */
 .header {
     width: 100%;
     background: #ff3a39;
@@ -132,7 +132,7 @@ body {
     object-fit: contain;
 }
 
-/* === Reset & base pour le menu === */
+
 .site-nav { width: 100%; }
 .site-nav .nav-list,
 .site-nav .nav-submenu {
@@ -142,7 +142,7 @@ body {
   box-sizing: border-box;
 }
 
-/* === Ligne principale du menu (desktop) === */
+/*  Ligne principale du menu  */
 .nav-list {
   display: flex;
   justify-content: center;
@@ -151,7 +151,7 @@ body {
   padding: 0 12px;
 }
 
-/* chaque item (li) : pas de bordure sur le li pour éviter double border */
+/*  pas de bordure sur le li pour éviter double border */
 .nav-item { position: relative; }
 
 /* Boutons visibles : bordure et background sur les <a> seulement */
@@ -182,32 +182,32 @@ body {
   transform: translateY(-1px);
 }
 
-/* === Sous-menu (dropdown) === */
+
 .nav-submenu {
   position: absolute;
   left: 50%;
   top: calc(100% + 10px);
   transform: translateX(-50%);
-  display: none;          /* caché par défaut */
+  display: none;          
   gap: 10px;
   padding: 12px;
   background: transparent; /* pas de double border : les <a> ont la bordure */
   z-index: 50;
-  min-width: 240px;       /* largeur min du conteneur du sous-menu */
+  min-width: 240px;      
 }
 
-/* Affiche le sous-menu au hover ou si le li a le focus */
+/*  sous-menu au hover  */
 .nav-item.nav-has-submenu:hover > .nav-submenu,
 .nav-item.nav-has-submenu:focus-within > .nav-submenu {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;        /* permet plusieurs boîtes sur plusieurs lignes si la place manque */
+  flex-wrap: wrap;        
 }
 
 /* Chaque case du sous-menu : on laisse la bordure sur l' <a> */
 .nav-submenu li { margin: 6px; }
 
-/* Si tu veux que les sous-éléments aient taille fixe, tu peux ajuster : */
+
 .submenu-link {
   padding: 16px 24px;
   min-width: 150px;
@@ -215,10 +215,10 @@ body {
   border-radius: 10px;
 }
 
-/* empêche que le sous-menu dépasse visuellement si parent est en overflow hidden */
+
 .site-nav, .nav-list { overflow: visible; }
 
-/* === Responsive : <= 900px on empile verticalement === */
+/* Responsive : <= 900px on empile verticalement */
 @media (max-width: 900px) {
   .nav-list {
     flex-direction: column;
@@ -233,13 +233,13 @@ body {
     text-align: center;
   }
 
-  /* affiche le sous-menu en tant que bloc emboîté (plus simple pour mobile) */
+  /* affiche le sous-menu en tant que bloc emboîté  */
   .nav-submenu {
     position: static;
     transform: none;
     top: auto;
     left: auto;
-    display: none; /* reste caché sauf si on ouvre via :focus-within */
+    display: none; 
     padding: 8px 0;
     min-width: auto;
     gap: 8px;
@@ -263,7 +263,7 @@ body {
 
 
 
-/* -------- FOOTER -------- */
+/* FOOTER  */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -296,12 +296,12 @@ body {
     font-weight: bold;
 }
 
-/* RGPD centré */
+
 .centre {
     text-align: center;
 }
 
-/* -------- RESPONSIVE -------- */
+/*  RESPONSIVE  */
 @media(max-width: 900px) {
     .footer {
         flex-direction: column;
